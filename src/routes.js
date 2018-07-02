@@ -1,7 +1,12 @@
 import Home from './pages/Home';
-import About from './pages/About';
+import ReportList from './pages/report/ReportList';
+import ReportAdd from './pages/report/ReportAdd';
+import ReportDetail from './pages/report/ReportDetail';
 import Services from './pages/Services';
-import Another from './pages/Another';
+import Calendar from './pages/Calendar';
+import FullCalendar from './pages/calendar/FullCalendar';
+import AddCalendar from './pages/calendar/AddCalendar';
+import Test from './pages/Test';
 import NotFoundPage from './pages/not-found.vue';
 
 export default [
@@ -10,16 +15,32 @@ export default [
     component: Home
   },
   {
-    path: '/about/',
-    component: About
+    path: '/report/list/',
+    component: ReportList
+  },
+  {
+    path: '/report/add/',
+    component: ReportAdd
+  },
+  {
+    path: '/report/:id/',
+    component: ReportDetail
+  },
+  {
+    path: '/full-calendar/list/',
+    component: FullCalendar
+  },
+  {
+    path: '/full-calendar/add/',
+    component: AddCalendar
   },
   {
     path: '/services/',
     component: Services
   },
   {
-    path: '/about/another/',
-    component: Another
+    path: '/calendar/',
+    component: Calendar
   },
   {
     path: '(.*)',
