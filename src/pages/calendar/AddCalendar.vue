@@ -34,7 +34,7 @@
                 <f7-label>
                     이벤트 일자 
                 </f7-label>
-                <f7-input type="text" placeholder="이벤트 일자"
+                <f7-input type="datetime" placeholder="이벤트 일자"
                         :value="start | formatDate" id="calendar-event"
                         @input="start = $event.target.value">
                 </f7-input>
